@@ -19,7 +19,7 @@ const SegmentBuilder = ({ onRulesChange }) => {
     setRules(updatedRules);
     onRulesChange(updatedRules);
 
-    // reset newRule
+    
     setNewRule({ field: 'age', operator: 'gt', value: '' });
   };
 

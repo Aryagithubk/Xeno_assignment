@@ -9,7 +9,7 @@ const CampaignPage = () => {
   const [filteredCustomers, setFilteredCustomers] = useState([]);
   const [allCustomers, setAllCustomers] = useState([]);
 
-  // Fetch all customers once on page load
+  
   useEffect(() => {
     const fetchCustomers = async () => {
       try {

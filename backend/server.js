@@ -12,7 +12,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 connectDB();
 
@@ -22,7 +22,6 @@ app.get('/',(req,res) => {
     res.send('API is running...');
 });
 
-// Add this to server.js after app.use(express.json())
 app.use('/api', require('./routes/CustomerRoutes'));
 app.use('/api', require('./routes/orderRoutes'));
 

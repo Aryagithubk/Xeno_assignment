@@ -22,7 +22,7 @@ const CampaignForm = ({ selectedCustomers, onSuccess }) => {
 
       alert('Campaign created successfully!');
       setCampaignName('');
-      onSuccess();  // parent can refresh or redirect
+      onSuccess();  
     } catch (error) {
       console.error(error);
       alert('Failed to create campaign.');

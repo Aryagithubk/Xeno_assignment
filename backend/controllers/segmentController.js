@@ -1,6 +1,6 @@
 const Segment = require('../models/Segment');
 
-// Create a segment
+
 exports.createSegment = async (req, res) => {
   try {
     const { name, rules } = req.body;
@@ -12,7 +12,7 @@ exports.createSegment = async (req, res) => {
   }
 };
 
-// Get all segments
+
 exports.getSegments = async (req, res) => {
   try {
     const segments = await Segment.find();
@@ -22,7 +22,7 @@ exports.getSegments = async (req, res) => {
   }
 };
 
-// Delete a segment
+
 exports.deleteSegment = async (req, res) => {
   try {
     const { id } = req.params;

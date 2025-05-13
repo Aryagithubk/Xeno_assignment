@@ -14,7 +14,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// GET all campaigns
+
 router.get('/', async (req, res) => {
     try {
       const campaigns = await Campaign.find().populate('customerIds'); // optional: to see customer details

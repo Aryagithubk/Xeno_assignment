@@ -13,7 +13,7 @@ exports.addOrder = async (req, res) => {
     const newOrder = new Order({ customer: customerId, amount });
     await newOrder.save();
 
-    // Update customer totalSpend + visits
+
     customer.totalSpend += amount;
     customer.visits += 1;
     customer.lastActive = new Date();
